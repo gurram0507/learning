@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!---  <style>
+        .table{
+            display: none;
+        }
+        
+        
+        </style>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="stylesheet" href="hide.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href ="bootstrap-4.4.1-dist/js/bootstrap.min.js">
+</head>
+<body>
+   <!--- <p id="demo" style="display:none"></p>-->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click</button>
+ <div class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog">
+<div class="container">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+      </div>
+    </div>
+   </div>
+ <div class="modal-body">
+ </div>
+
+  <!----  <table class="table">
+         <thead>
+                <tr>
+            <th scope="col">sno</th>
+            <th scope="col">First name</th>
+            <th scope="col">Moblie Number</th>
+            <th scope="col">Email</th>
+            <th scope="col"><button type="button"><a href="#" id="toggle" onClick="toggle_it('tr1');toggle_it('tr2');toggle_it('tr3')">show/hide</a></th></button>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="tr1" >
+            <th scope="row">1</th>
+            <td id="s">Gurram praveen</td>
+            <td id="a">9640002686</td>
+            <td id="i">@mdo</td>
+            <td><button type="button" >submit</button></td>
+           <!---- <td><button type="button"><a href="#" id="toggle" onClick="toggle_it('tr1');">show/hide</a></td></button>-->
+       <!----  </tr>
+          <tr id="tr2">
+            <th scope="row">2</th>
+            <td id="p">Snadeep</td>
+            <td id="r">123456789</td>
+            <td id="q">@fat</td>
+            <td><button type="button" onclick="myFunction1()">submit</button></td>
+           <!---- <td><button type="button"><a href="#" id="toggle" onClick="toggle_it('tr2');">show/hide</a></td></button>-->
+      <!----    </tr>
+          <tr id="tr3">
+            <th scope="row">3</th>
+            <td id="g">sravanthi</td>
+            <td id="m">9030564265</td>
+            <td id="n">@twitter</td>
+            <td><button type="button" onclick="myFunction2()">submit</button></td>
+           <!---- <td><button type="button"><a href="#" id="toggle" onClick="toggle_it('tr3');">show/hide</a></td></button>-->
+        <!----  </tr>
+        </tbody>
+      <!----  <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>-->
+    <!----  </table>-->
+    </div>
+ </div>
+        <script>
+            function toggle_it(itemID){ 
+    // TOGGLE METHOD B/W HIDE() AND SHOW() FOR THE SELECTED ELEMENTS
+    if ((document.getElementById(itemID).style.display == 'none')) { 
+          document.getElementById(itemID).style.display = '' 
+          event.preventDefault()
+    } else { 
+          document.getElementById(itemID).style.display = 'none'; 
+          event.preventDefault()
+    }    
+}
+            function myFunction()
+            {
+                var x1=document.getElementById("s").innerHTML;
+                var x2=document.getElementById('a').innerHTML;
+                var x3=document.getElementById('i').innerHTML;
+                console.log(x1);
+                console.log(x2)
+                console.log(x3)
+
+                //console.log("hello")//
+            window. alert("First name:"+x1+"Moblie Number"+x2+"Email"+x3);
+               // window.alert("Moblie Number"+x2)
+               // window.alert("Email"+x3)
+            }
+
+            function myFunction1()
+            {
+                var x4=document.getElementById("p").innerHTML;
+                var x5=document.getElementById('r').innerHTML;
+                var x6=document.getElementById('q').innerHTML;
+
+                window. alert("First name:"+x4+"Moblie Number"+x5+"Email"+x6);
+                //window.alert("Moblie Number"+x5)
+                //window.alert("Email"+x6)
+            }
+            function myFunction2()
+            {  
+
+                var x7=document.getElementById("g").innerHTML;
+                var x8=document.getElementById('m').innerHTML;
+                var x9=document.getElementById('n').innerHTML;
+                window. alert("First name:"+x7+"Moblie Number"+x8+"Email"+x9);
+                
+               
+               // window.alert("Moblie Number"+x8)
+               // window.alert("Email"+x9)
+            }   
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   <!---- <button type="button" onclick="document.getElementsByClassName('table').style.display='block'">Click Me!</button>-->
+<!----  </div>
+</div>
+</div>
+</div>-->
+</body>
+</html>

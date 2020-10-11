@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <!-----nav bar starts-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <a class="navbar-brand" href="#">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--auto col starts-->
+        <div class="col-auto">
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+         <!----  <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">services </a>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+         <!--   <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>-->
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="#">Services</a>
+            </li>
+          </ul>
+        </div>
+        </div><!--auto col ends-->
+        </div>
+      </nav>
+      <!--nav bar ends-->
+      <div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="data:image/jpeg;base64,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" alt="Snow" style="width:620px">
+          </div>
+          <div class="praveen1">
+            <h5>Business Name or Tagline</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora sint esse, excepturi maxime eaque quis! Nobis repellendus amet sunt illum est! Praesentium sapiente, eaque alias et quia vero commodi dolorum eum quibusdam deleniti distinctio ut consequatur pariatur ratione tempore eligendi aliquid qui quam dolore facilis ullam. Illum, nihil exercitationem.</p> 
+            <button type="button" class="btn btn-primary">Call Action!</button>
+          </div>
+        </div>
+      
+
+      <!---jumbotron
+      <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm-6 btn-holder">
+                </div>
+                <div class="col-sm-6">
+                   <h1>Hello, world!</h1>
+           <hr class="my-4">
+           <p >
+            This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+
+           </p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+    </div>
+          </div>
+      </div>
+      ----middle bar-->
+      <p id="praveen">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+      <!---middle bar ends-->
+      <!--cards-->
+      <div class="container">
+        <div class ="row">
+            <div class="col-md-4 text-center">
+                <div class="profile">
+                    <img src="tata.png" class="user">
+                    <blockquote>"Tata Group is an Indian multinational conglomerate holding company headquartered in Mumbai, Maharashtra, India. Founded in 1868 by Jamsedji Tata, the company gained international recognition after purchasing several global companies. One of India's largest conglomerates, Tata Group is owned by Tata Sons".</blockquote>
+                    <h3>Ratan tata<span>founder</span></h3>
+                    <button class="btn btn-success btn-xs active">click me</button>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="profile">
+                    <img src="amazon.png" class="user">
+                    <blockquote> Ever wonder how Amazon gets your packages to you so quickly? Come see the magic. Tour one of our fulfillment centers and see first-hand how we deliver to you.
+
+                        Search for a location and reserve up to 10 seats as long as they are older than 6 years of age. If your group size is greater than 10, please email us at tours@amazon.com so that we can help facilitate.</blockquote>
+                    <h3>Jeff Bezos<span>founder</span></h3>
+                    <button class="btn btn-success btn-xs active">click me</button>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="profile">
+                    <img src="upstreet.png" class="user">
+                    <blockquote>What makes our company different is our people. We’ll work with you to uncover your short- and long-term goals and develop solutions that work for you.
+
+                        Are you ready for your campaigns to really make an impact? Call us today to schedule a free consultation It is gratifying to see that GITAM trifocal vision-teaching, research and consultancy – is yielding ve</blockquote>
+                    <h3>pradeep<span>founder</span></h3>
+                    <button class="btn btn-success btn-xs active">click me</button>
+                </div>
+            </div>
+            <!--cards ends-->
+ 
+            <div class="footer">
+                <p>Footer</p>
+              </div>
+
+
+    <script src="bootstrap/js/jquery-2.1.4.min.js"></script>
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

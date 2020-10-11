@@ -1,0 +1,91 @@
+.bg-dark
+{
+    background-color: #04204e;
+}
+.navbar-brand
+{
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar-dark.navbar-nav.navlink
+{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.navbar-dark.navbar-nav .nav-item
+{
+    margin: 0 15px;
+}
+img{
+    margin: 25px;
+    height: 260px;
+}
+.praveen1{
+  background-color:snow;
+  margin: 20px;
+  padding: 15px;
+  width: 500px;
+}
+.jumbotron
+{
+    margin-top: 20px;
+    background-size: cover;
+    color:lightblue;
+
+}
+.col-md-4{
+    margin: 40px auto ;
+}
+.profile{
+    padding:70px 70px 10px ;
+    background-color:#efef ;
+}
+.profile img{
+    top: -60px;
+    position: absolute;
+    left: calc(50% -60px);
+    border: 10px solid white;
+
+}
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #ff9800;
+}
+span{
+    font-size: 12px;
+    color: #333;
+}
+blockquote
+{
+    font-size: 16px;
+    line-height: 30px;
+}
+.profile:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#praveen{
+    background-color: black;
+    color: white;
+    margin: 35px;
+    padding: 30px;
+    text-align: center;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
